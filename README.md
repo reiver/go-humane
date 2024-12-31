@@ -1,6 +1,6 @@
 # go-humane
 
-Package **humane** tools for making data (and how it is presented) more human-friendly, for the Go programming language.
+Package **humane** provides tools for making data (and how it is presented) more human-friendly, for the Go programming language.
 
 ## Documention
 
