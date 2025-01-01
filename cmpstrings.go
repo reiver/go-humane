@@ -58,7 +58,7 @@ func cmpStrings(str1 string, str2 string) int {
 		case len1 > len2:
 			return 1
 		default:
-		return strings.Compare(mapString(str1),mapString(str2))
+			return strings.Compare(mapString(str1),mapString(str2))
 		}
 	}
 }
