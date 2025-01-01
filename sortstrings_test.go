@@ -135,8 +135,8 @@ func TestSortStrings(t *testing.T) {
 
 
 		{
-			Strings:  []string{"BaNaNa","bAnAn","BaNa","bAn","Ba","b","bAnAnA","BaNaN","bAnA","BaN","bA","B"},
-			Expected: []string{"B","b","Ba","bA","BaN","bAn","BaNa","bAnA","BaNaN","bAnAn","BaNaNa","bAnAnA"},
+			Strings:  []string{"BaNaNa","bAnAn","BaNa","bAn","Ba","b","bAnAnA","BaNaN","bAnA","BaN","bA","B","banana","BANANA"},
+			Expected: []string{"B","b","Ba","bA","BaN","bAn","BaNa","bAnA","BaNaN","bAnAn","BANANA","BaNaNa","bAnAnA","banana"},
 		},
 	}
 
