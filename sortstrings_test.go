@@ -56,7 +56,7 @@ func TestSortStrings(t *testing.T) {
 
 		{
 			Strings:  []string{"A-uppercase","B-uppercase","C-uppercase","a-lowercase","b-lowercase","c-lowercase"},
-			Expected: []string{"A-uppercase","a-lowercase","B-uppercase","b-lowercase","C-uppercase","c-lowercase"},
+			Expected: []string{"a-lowercase","A-uppercase","b-lowercase","B-uppercase","c-lowercase","C-uppercase"},
 		},
 
 
@@ -123,6 +123,20 @@ func TestSortStrings(t *testing.T) {
 		{
 			Strings:  []string{"AbCdE","BcDeF","aBcDe","bCdEf"},
 			Expected: []string{"AbCdE","aBcDe","BcDeF","bCdEf"},
+		},
+
+
+
+		{
+			Strings:  []string{"BaNaNa","bAnAn","BaNa","bAn","Ba","b"},
+			Expected: []string{"b","Ba","bAn","BaNa","bAnAn","BaNaNa"},
+		},
+
+
+
+		{
+			Strings:  []string{"BaNaNa","bAnAn","BaNa","bAn","Ba","b","bAnAnA","BaNaN","bAnA","BaN","bA","B"},
+			Expected: []string{"B","b","Ba","bA","BaN","bAn","BaNa","bAnA","BaNaN","bAnAn","BaNaNa","bAnAnA"},
 		},
 	}
 
