@@ -45,6 +45,7 @@ func cmpStrings(str1 string, str2 string) int {
 	var cutlow1 string = lower1[:minlength]
 	var cutlow2 string = lower2[:minlength]
 
+	//@TODO: could this cause a bug if we truncte a UTF-8 character?
 	var mcutlow1 string = mapString(cutlow1)
 	var mcutlow2 string = mapString(cutlow2)
 
